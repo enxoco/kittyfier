@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Kittyfier",
+    "description": "Waste time by looking at random pictures of cats."
+  },
+  "appDescription": {
+    "message": "Waste some time by replacing images on a website with cats.",
+    "description": "Automagically replaces all pictures on a website with random pictures of cats.  Over 1400 cat pictures!"
+  }
+}
