@@ -22,10 +22,10 @@ disableButton.addEventListener('click', function(){
 
   chrome.storage.sync.get('kitty', function(data) {
 
-      var enabled = !data.kitty
+      var enabled = (data.kitty) ? !data.kitty : 'false'
       chrome.storage.sync.set({'kitty': enabled})
     
-    disableButton.innerText = enabled
+    disableButton.innerText = (enabled) ? 'Disable' : 'Enable'
   });
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
