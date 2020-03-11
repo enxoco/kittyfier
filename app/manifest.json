@@ -20,8 +20,6 @@
     "https://*/*",
     "background",
     "contentSettings",
-    "debugger",
-    "pageCapture",
     "storage"
   ],
   "options_ui": {
