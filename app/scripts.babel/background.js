@@ -6,6 +6,8 @@ for (var i = 0; i < div.length; i++){
 }
 
 var imgs = document.querySelectorAll('img')
-for (var i = 0; i < imgs.length; i++){
-    imgs[i].src = cats[Math.floor((Math.random() * 1400))]
-}
+imgs.forEach(img => {
+  let catImage = cats[Math.floor((Math.random() * 1400))]
+  img.src = catImage;
+  img.srcSet = catImage;
+})
